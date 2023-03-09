@@ -1,4 +1,3 @@
-/* Portfolio */
 :root {
   --primary-text-color: #2e2f42;
   --primary-background-color: #ffffff;
@@ -10,22 +9,51 @@
   --footer-color: #e7e9fc;
   --footer-studio: #f4f4fd;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--primary-text-color);
   background: var(--primary-background-color);
 }
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
+img {
+  display: block;
 }
 /* Header */
 .page-header {
   text-decoration: none;
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 .header-nav {
   display: flex;
@@ -34,7 +62,7 @@ ul {
 .page-header-link {
   font-family: "Raleway";
   font-weight: 800;
-  text-transform: uppercase;
+
   font-size: 18px;
   color: var(--primary-text-color);
   line-height: calc(24 / 18);
@@ -48,8 +76,6 @@ ul {
   text-decoration: none;
   display: flex;
   margin-left: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-list :hover {
   color: var(--hover);
@@ -71,12 +97,9 @@ ul {
 }
 .header-address {
   display: flex;
-  font-style: normal;
   font-size: 16px;
   margin-left: 332px;
   margin-right: 156px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-address :hover {
@@ -108,6 +131,8 @@ ul {
 }
 .main-list {
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .botton-main:hover {
   color: var(--primary-background-color);
@@ -124,12 +149,13 @@ ul {
   line-height: calc(24 / 16);
   text-align: center;
   background: var(--footer-studio);
-  cursor: pointer;
   border-radius: 4px;
   color: var(--logo-web);
   background: var(--footer-studio);
 }
 .image-list {
+  flex-wrap: wrap;
+  display: flex;
 }
 .image-title {
   font-weight: 500;
@@ -162,14 +188,21 @@ ul {
   line-height: calc(24 / 16);
   color: var(--footer-color);
 }
-/* Studio - Main content */
+/* ----------------------------------------Studio - Main content------------------------------- */
 .section-main-studio {
   background: var(--background-footer);
   color: var(--primary-background-color);
+  padding-top: 188px;
+  padding-bottom: 292px;
+}
+.section-studio {
+  text-align: center;
 }
 .main-studio-title {
   font-weight: 700;
   font-size: 56px;
+  max-width: 496px;
+  margin: 0 auto;
   line-height: calc(60 / 56);
   color: var(--primary-background-color);
 }
@@ -188,14 +221,24 @@ ul {
   font-size: 16px;
   line-height: calc(24 / 16);
   text-align: center;
-  cursor: pointer;
   border-radius: 4px;
   color: var(--primary-background-color);
   background: var(--logo-web);
+  display: block;
+  margin: 0 auto;
 }
 /* Information */
 .studio-text {
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--heder-list-contacts);
+}
+.section-studio-list {
+  display: flex;
+}
+.studio-image-list {
+  display: flex;
+}
+.studio-image-title {
+  text-align: center;
 }
