@@ -139,6 +139,7 @@ img {
   display: flex;
   text-align: center;
   justify-content: center;
+  gap: 24px;
 }
 .botton-main:hover {
   color: var(--primary-background-color);
@@ -152,16 +153,34 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  height: 48px;
   line-height: calc(24 / 16);
   text-align: center;
   background: var(--footer-studio);
   border-radius: 4px;
   color: var(--logo-web);
   background: var(--footer-studio);
-  margin-right: 24px;
+  border: 1px solid var(--footer-color);
 }
+
 .botton-main:last-child {
   margin-right: 0;
+}
+/* ширина кнопок */
+.all {
+  width: 69px;
+}
+.website {
+  width: 116px;
+}
+.app {
+  width: 78px;
+}
+.design {
+  width: 101px;
+}
+.marketing {
+  width: 126px;
 }
 .image-list {
   flex-wrap: wrap;
@@ -191,6 +210,8 @@ img {
   height: 312px;
   align-content: center;
 }
+.container-footer {
+}
 .footer-web {
   color: var(--logo-web);
 }
@@ -206,6 +227,9 @@ img {
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--footer-color);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 1020px;
 }
 /* ----------------------------------------Studio - Main content------------------------------- */
 .section-main-studio {
@@ -244,6 +268,8 @@ img {
   border-radius: 4px;
   color: var(--primary-background-color);
   background: var(--logo-web);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
   margin-top: 48px;
@@ -262,6 +288,7 @@ img {
 .studio-title {
   justify-content: flex-start;
 }
+/* Висота Контейнерів */
 .section-studio {
   height: 107px;
 }
@@ -270,6 +297,7 @@ img {
 }
 .section-studio-image {
   height: 732px;
+  background: var(--footer-studio);
 }
 .section-studio-list {
   display: flex;
