@@ -53,7 +53,9 @@ img {
   margin: 0 auto;
   outline: 2px solid red;
 }
-
+.container-header {
+  display: flex;
+}
 .header-nav {
   align-items: center;
   display: flex;
@@ -98,8 +100,9 @@ img {
 .header-address {
   display: flex;
   font-size: 16px;
-
-  justify-content: flex-end;
+  margin-left: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-address :hover {
@@ -110,7 +113,6 @@ img {
 }
 .list-address {
   display: flex;
-  align-content: flex-start;
 }
 .list-address-item {
   margin-right: 40px;
