@@ -50,25 +50,24 @@ img {
 }
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-
   outline: 2px solid red;
 }
+
 .header-nav {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .page-header-link {
   font-family: "Raleway";
   font-weight: 800;
-
   font-size: 18px;
   color: var(--primary-text-color);
   line-height: calc(24 / 18);
-  margin-left: 156px;
+
+  justify-content: flex-start;
 }
+
 .header-logo-web {
   color: var(--logo-web);
 }
@@ -99,8 +98,8 @@ img {
 .header-address {
   display: flex;
   font-size: 16px;
-  margin-left: 332px;
-  margin-right: 156px;
+
+  justify-content: flex-end;
 }
 
 .header-address :hover {
@@ -111,6 +110,7 @@ img {
 }
 .list-address {
   display: flex;
+  align-content: flex-start;
 }
 .list-address-item {
   margin-right: 40px;
@@ -121,6 +121,9 @@ img {
 .list-contacts {
   text-decoration: none;
   color: var(--heder-list-contacts);
+  width: 153px;
+  height: 24px;
+  align-items: center;
 }
 /* Main Content */
 .content-main {
@@ -153,6 +156,10 @@ img {
   border-radius: 4px;
   color: var(--logo-web);
   background: var(--footer-studio);
+  margin-right: 24px;
+}
+.botton-main:last-child {
+  margin-right: 0;
 }
 .image-list {
   flex-wrap: wrap;
@@ -168,10 +175,19 @@ img {
   line-height: calc(24 / 16);
   color: var(--heder-list-contacts);
 }
+.image {
+  margin-right: 24px;
+  margin-left: 0;
+}
+.image:last-child {
+  margin-right: 0;
+}
 /* Footer */
 .page-footer {
   color: var(--footer-color);
   background: var(--background-footer);
+  height: 312px;
+  align-content: center;
 }
 .footer-web {
   color: var(--logo-web);
@@ -195,9 +211,10 @@ img {
   color: var(--primary-background-color);
   padding-top: 188px;
   padding-bottom: 292px;
+  height: 600px;
 }
 .section-studio {
-  text-align: center;
+  justify-content: flex-start;
 }
 .main-studio-title {
   font-weight: 700;
@@ -227,6 +244,9 @@ img {
   background: var(--logo-web);
   display: block;
   margin: 0 auto;
+  margin-top: 48px;
+  width: 169px;
+  height: 56px;
 }
 /* Information */
 
@@ -235,20 +255,33 @@ img {
   line-height: calc(24 / 16);
   color: var(--heder-list-contacts);
   margin-right: 24px;
+  justify-content: flex-start;
+}
+.studio-title {
+  justify-content: flex-start;
 }
 .section-studio {
+  height: 107px;
 }
-
+.section-studio-work {
+  height: 412px;
+}
+.section-studio-image {
+  height: 732px;
+}
 .section-studio-list {
   display: flex;
-  margin-right: 24px;
 }
-.section-studio-list:last-child {
+.section-image-list:last-child {
   margin-right: 0;
 }
 .studio-image-list {
   display: flex;
+  margin-right: 24px;
 }
 .studio-image-title {
   text-align: center;
+}
+.studio-image {
+  margin-right: 24px;
 }
