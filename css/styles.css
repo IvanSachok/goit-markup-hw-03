@@ -189,10 +189,12 @@ img {
 /* ширина кнопок */
 
 .image-list {
-  flex-wrap: wrap;
   display: flex;
-  gap: 24px;
-  min-width: 360px;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.photo {
+  padding-bottom: 120px;
 }
 .image-title {
   font-family: "Roboto";
@@ -201,6 +203,7 @@ img {
   font-size: 20px;
   line-height: calc(24 / 20);
   text-align: start;
+  margin-left: 16px;
 }
 /* Our Team */
 .image-title-team {
@@ -239,10 +242,10 @@ img {
   color: var(--heder-list-contacts);
   text-align: start;
   margin-top: 8px;
+  margin-left: 16px;
 }
 .image {
-  height: 420px;
-  margin-bottom: 48px;
+  width: 360px;
   border: 1px solid var(--footer-color);
   background: var(--primary-background-color);
 }
