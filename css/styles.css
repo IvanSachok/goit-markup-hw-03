@@ -315,7 +315,7 @@ img {
   line-height: calc(24 / 16);
   text-align: center;
   border-radius: 4px;
-  padding: 16px, 32px;
+  padding: 16px 32px;
   color: var(--primary-background-color);
   background: var(--logo-web);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
