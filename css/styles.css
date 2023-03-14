@@ -55,6 +55,7 @@ img {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid red;
 }
 .container {
   width: 1158px;
@@ -62,6 +63,10 @@ img {
   padding-left: 15px;
   margin: 0 auto;
   outline: 2px solid red;
+}
+.buttton {
+  padding-top: 96px;
+  margin-bottom: 72px;
 }
 .text-foto {
   padding-top: 32px;
@@ -152,7 +157,6 @@ img {
   line-height: calc(24 / 20);
 }
 .section-main {
-  padding-top: 96px;
   padding-bottom: 120px;
   color: var(--logo-web);
 }
@@ -189,7 +193,6 @@ img {
 .botton-main:last-child {
   margin-right: 0;
 }
-/* ширина кнопок */
 
 .image-list {
   display: flex;
